@@ -25,6 +25,8 @@ jobs:
           script: |
             const message = 'Hello!';
 
+            console.log('context:', context);
+
             // 以下は、権限の設定を行わないとエラーになる。
             // https://github.com/gipcompany/workflow_cove/settings/actions
             // Workflow permissions で、 `Read repository contents and packages permissions` から `Read and write permissions` に変更し、Saveする。
