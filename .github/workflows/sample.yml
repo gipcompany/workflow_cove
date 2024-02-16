@@ -27,7 +27,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const message = 'Hello!';
+            const message = '<a target="_blank" href="https://example.com/">top page</a>';
 
             console.log('context:', context);
 
@@ -43,5 +43,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: message
+              body: message // TODO: bodyにはhtmlタグが使えるのか？
             });
