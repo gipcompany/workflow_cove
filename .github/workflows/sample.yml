@@ -26,6 +26,8 @@ jobs:
             const message = 'Hello!';
 
             // 以下は、権限の設定を行わないとエラーになる。
+            // https://github.com/gipcompany/workflow_cove/settings/actions
+            // Workflow permissions で、 `Read repository contents and packages permissions` から `Read and write permissions` に変更し、Saveする。
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
