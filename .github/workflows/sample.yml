@@ -17,10 +17,10 @@ jobs:
 
       - name: debug
         run: |
-          'echo "github.event_name: ${{ github.event_name }}"'
-          'echo "github.head_ref: ${{ github.head_ref }}"'
-          'echo "github.ref: ${{ github.ref }}"'
-          'echo "github.ref_name: ${{ github.ref_name }}"'
+          echo "github.event_name: ${{ github.event_name }}"
+          echo "github.head_ref: ${{ github.head_ref }}"
+          echo "github.ref: ${{ github.ref }}"
+          echo "github.ref_name: ${{ github.ref_name }}"
 
       - name: github-script
         uses: actions/github-script@v7
