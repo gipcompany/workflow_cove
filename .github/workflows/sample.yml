@@ -26,7 +26,10 @@ jobs:
             const message = 'Hello!';
 
             console.log('context:', context);
-            console.log({ context });
+            console.log({
+              context,
+              github
+            });
 
             // 以下は、権限の設定を行わないとエラーになる。
             // https://github.com/gipcompany/workflow_cove/settings/actions
