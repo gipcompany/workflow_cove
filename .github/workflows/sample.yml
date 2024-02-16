@@ -30,9 +30,11 @@ jobs:
             const message = 'Hello!';
 
             console.log('context:', context);
-            console.log('github:', github);
-            console.log('github.ref:', github.ref);
-            console.log('github.ref_name:', github.ref_name);
+
+            console.log('context.base_ref:', context.base_ref);
+            console.log('context.head_ref:', context.head_ref);
+            console.log('context.ref:', context.ref);
+            console.log('context.ref_type:', context.ref_type);
 
             // 以下は、権限の設定を行わないとエラーになる。
             // https://github.com/gipcompany/workflow_cove/settings/actions
