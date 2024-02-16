@@ -25,6 +25,7 @@ jobs:
           script: |
             const message = 'Hello!';
 
+            // 以下は、権限の設定を行わないとエラーになる。
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
